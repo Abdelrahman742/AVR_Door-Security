@@ -1,0 +1,185 @@
+/*
+ * Main.c
+ *
+ *  Created on: Jul 6, 2024
+ *      Author: dell
+*/
+#include<avr/io.h>
+#include "lcd.h"
+#include "keypad.h"
+#include "uart.h"
+#include <util/delay.h>
+#include "timer1.h"
+
+#define GET_READY 			0x10
+#define GET_READY2 			0x20
+#define GET_READY3 			0x30
+#define GET_READY4 			0x40
+#define GET_READY5 			0x50
+#define GET_READY6 			0x60
+
+uint8 password_1[5]={0};
+uint8 password_2[5]={0};
+uint8 Entered_pass[5]={0};
+uint8 STEP1 = 1;
+uint8 STEP2 = 0;
+uint8 counter=0;
+
+void STEP_1()
+{
+	LCD_displayString("plz enter pass:");
+	LCD_moveCursor(1,0);
+	Enter_Password(password_1);
+
+	LCD_clearScreen();
+	LCD_displayStringRowColumn(0,0,"plz re-enter the");
+	LCD_displayStringRowColumn(1,0,"same pass:");
+	_delay_ms(500);
+	LCD_moveCursor(1,10);
+	for(counter=0;counter<10;counter++)
+	{
+		password_2[counter]=KEYPAD_getPressedKey();
+		if(KEYPAD_getPressedKey() == '=')
+		{
+			break;
+		}
+		else
+		{
+			LCD_displayCharacter('*');
+			_delay_ms(500);
+		}
+	}
+
+	UART_sendByte(GET_READY);
+	sendPasswordByUART(password_1);
+	sendPasswordByUART(password_2);
+
+	if(UART_recieveByte() == '#')
+	{
+		STEP2=1;
+		STEP1=0;
+	}
+}
+void Enter_Password(uint8 *password)
+{
+	uint8 i;
+	for(i=0;i<10;i++)
+	{
+		password[i]= KEYPAD_getPressedKey();
+		if(KEYPAD_getPressedKey() == '=') /* 13 Button means Enter */
+		{
+			break;
+		}
+		else
+		{
+			LCD_displayCharacter('*');
+			_delay_ms(500);
+		}
+	}
+}
+
+void sendPasswordByUART(uint8 *PASSWORD)
+{
+	uint8 i;
+	for(i=0;i<5;i++) /* Sending Password */
+	{
+		UART_sendByte(PASSWORD[i]);
+		_delay_ms(10);
+	}
+}
+
+void STEP_2(void)
+{
+	LCD_moveCursor(0,0);
+	LCD_displayString("+ : Open Door");
+	LCD_moveCursor(1,0);
+	LCD_displayString("- : Change Pass");
+	if(KEYPAD_getPressedKey() == '+')
+	{
+		uint8 i=1;
+		UART_sendByte(GET_READY5);
+		UART_sendByte('+');
+		while(i<5)
+		{
+			LCD_clearScreen();
+			LCD_displayString("plz enter pass:");
+			LCD_moveCursor(1,0);
+			_delay_ms(500);
+			Enter_Password(Entered_pass);
+			sendPasswordByUART(Entered_pass);
+			if(UART_recieveByte() == 'A')
+			{
+				LCD_displayString("Door is Unlocking");
+				_delay_ms(15000);
+				LCD_displayString("Hold");
+				_delay_ms(3000);
+				LCD_displayString("Door is Locking");
+				_delay_ms(15000);
+				break;
+			}
+			if(i==3)
+			{
+				UART_sendByte(GET_READY5);
+				UART_sendByte('B');
+				LCD_clearScreen();
+				LCD_displayString("ERROR");
+				_delay_ms(60000);
+				STEP_2();
+			}
+		}
+	}
+	else if(KEYPAD_getPressedKey() == '-')
+	{
+		uint8 i=1;
+		UART_sendByte(GET_READY5);
+		UART_sendByte('-');
+		while(i<5)
+		{
+			LCD_clearScreen();
+			LCD_displayString("plz enter pass:");
+			LCD_moveCursor(1,0);
+			_delay_ms(500);
+			Enter_Password(Entered_pass);
+			sendPasswordByUART(Entered_pass);
+			if(UART_recieveByte() == '3')
+			{
+				STEP_1();
+				STEP_2();
+			}
+			if(i==3)
+			{
+				UART_sendByte(GET_READY5);
+				UART_sendByte('B');
+				LCD_clearScreen();
+				LCD_displayString("ERROR");
+				_delay_ms(60000);
+				STEP_2();
+			}
+		}
+	}
+}
+
+int main()
+{
+	Timer1_ConfigType Timer1_Configurations={0,0,clk_1,Normal};
+	UART_ConfigType UART_Configurations = {BITS8,EVEN_PARITY,STOP_1BIT,BDR6};
+	SREG |= (1<<7);
+	LCD_init();
+	UART_init(&UART_Configurations);
+	Timer1_init(&Timer1_Configurations);
+
+	while(1)
+	{
+		LCD_clearScreen();
+
+		if(STEP1 == 1)
+		{
+			STEP_1();
+		}
+
+		if(STEP2 == 1)
+		{
+			STEP_2();
+		}
+	}
+}

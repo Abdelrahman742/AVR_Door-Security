@@ -1,0 +1,230 @@
+/*
+ * Main.c
+ *
+ *  Created on: Jul 6, 2024
+ *      Author: Abdelrahman Ibrahem Adel
+ *
+*/
+/*****************************header files*********************************/
+#include "lcd.h"
+#include "keypad.h"
+#include "uart.h"
+#include "timer1.h"
+#include "std_types.h"
+#include<util/delay.h>
+#include<avr/io.h>
+/**************************************************************************/
+/*****************************Definitions**********************************/
+#define GET_READY 			0x10
+#define PASSWORD_SIZE       5
+/*****************************Global Variables*****************************/
+/**************************************************************************/
+uint8 password_1[10]={0};
+uint8 password_2[10]={0};
+uint8 Entered_pass[10]={0};
+uint8 CHECK_PASS[10]={0};
+/**************************************************************************/
+/*****************************Global Arrays********************************/
+uint8 STEP1 = 1;
+uint8 STEP2 = 0;
+uint8 counter=1;
+uint8 WRONG_PASS=0;
+/****************************Functions*************************************/
+/**************************************************************************/
+void Enter_Password(uint8 *password)
+{
+	uint8 i;
+	for(i=0;i<10;i++)
+	{
+		password[i]= KEYPAD_getPressedKey();
+		if(password[i] == '=')
+		{
+			break;
+		}
+		else
+		{
+			LCD_displayCharacter('*');
+			_delay_ms(500);
+		}
+	}
+}
+
+void sendPasswordByUART(uint8 *PASSWORD)
+{
+	uint8 i;
+	for(i=0;i<PASSWORD_SIZE;i++) /* Sending Password */
+	{
+		UART_sendByte(PASSWORD[i]);
+	}
+}
+
+int main()
+{
+	/**************************Initialization***************************/
+	Timer1_ConfigType Timer1_Configurations={0,0,clk_1,Normal};
+	UART_ConfigType UART_Configurations = {BITS8,EVEN_PARITY,STOP_1BIT,BDR6};
+	SREG |= (1<<7);
+	LCD_init();
+	UART_init(&UART_Configurations);
+	Timer1_init(&Timer1_Configurations);
+	/*******************************************************************/
+
+	while(1)
+	{
+		LCD_clearScreen();
+
+		if(STEP1 == 1)
+		{
+			UART_sendByte(GET_READY);
+			LCD_displayString("plz enter pass:");
+			LCD_moveCursor(1,0);
+
+			Enter_Password(password_1);
+
+			LCD_clearScreen();
+			LCD_displayStringRowColumn(0,0,"plz re-enter the");
+			LCD_displayStringRowColumn(1,0,"same pass:");
+			LCD_moveCursor(1,10);
+
+			Enter_Password(password_2);
+
+			sendPasswordByUART(password_1);
+			sendPasswordByUART(password_2);
+
+			while(1)
+			{
+				if(UART_recieveByte() == '#')
+				{
+					STEP2=1;
+					STEP1=0;
+					break;
+				}
+				else
+				{
+					STEP2=0;
+					STEP1=1;
+					break;
+				}
+			}
+		}
+		/******************************************Main Options********************************/
+		if(STEP2 == 1)
+		{
+			STEP2=0;
+			uint8 Button;
+			LCD_displayStringRowColumn(0,0,"+ : Open Door   ");
+			LCD_displayStringRowColumn(1,0,"- : Change Pass");
+			Button=KEYPAD_getPressedKey();
+			_delay_ms(500);
+
+			if(Button == '+')
+			{
+				UART_sendByte('+');
+
+				LCD_clearScreen();
+				LCD_displayString("plz enter pass:");
+				LCD_moveCursor(1,0);
+				Enter_Password(Entered_pass);
+				sendPasswordByUART(Entered_pass);
+
+				while(1)
+				{
+					if(UART_recieveByte() == 'A')
+					{
+						LCD_clearScreen();
+						LCD_displayString("Door is Unlocking");
+						_delay_ms(15000);
+						LCD_clearScreen();
+						LCD_displayString("Hold");
+						_delay_ms(3000);
+						LCD_clearScreen();
+						LCD_displayString("Door is Locking");
+						_delay_ms(15000);
+						STEP2=1;
+						STEP1=0;
+						break;
+					}
+					else if(UART_recieveByte()=='B')
+					{
+						WRONG_PASS = 1;
+						STEP2=0;
+						STEP1=0;
+						break;
+					}
+				}
+			}
+			else if(Button == '-')
+			{
+				UART_sendByte('-');
+
+				LCD_clearScreen();
+				LCD_displayString("plz enter pass:");
+				LCD_moveCursor(1,0);
+				Enter_Password(Entered_pass);
+				sendPasswordByUART(Entered_pass);
+
+				while(1)
+				{
+					if(UART_recieveByte() == 'A')
+					{
+						STEP1=1;
+						STEP2=0;
+						break;
+					}
+					else if(UART_recieveByte() == 'B')
+					{
+						WRONG_PASS = 1;
+						STEP2=0;
+						STEP1=0;
+						break;
+					}
+				}
+			}
+			if(WRONG_PASS == 1)
+			{
+				/* Sending This Byte To Synchronize The Two System With Each Other */
+				UART_sendByte(GET_READY);
+				LCD_clearScreen();
+				LCD_displayString("plz enter pass:");
+				LCD_moveCursor(1,0);
+				Enter_Password(CHECK_PASS); /* Receive The User Password */
+				sendPasswordByUART(CHECK_PASS); /* Sending User Password To CONTROL_ECU To Check it From EEPROM */
+
+
+				/* Don't Exit While(1) Until You Receive From UART Of CONTROL_ECU */
+				while(1)
+				{
+					if(UART_recieveByte()=='X') /* UART Of CONTROL_ECU Will Send 'X' If The User Password Similar To EEPROM Password */
+					{
+						/* Go To The Main Option Menu */
+						WRONG_PASS = 0;
+						counter=0;
+						STEP2=1;
+						STEP1=0;
+						break;
+					}
+					else if(UART_recieveByte()=='Y') /* UART Of CONTROL_ECU Will Send 'Y' If The User Password Different From EEPROM Password */
+					{
+						/* You Will Still In Wrong Password Menu And Counter Of Wrong Passwords Will Increment */
+						counter++;
+						WRONG_PASS = 1;
+						STEP2=0;
+						STEP1=0;
+						break;
+					}
+				}
+				if (counter == 3) /*If The User Enters Wrong Password Three Times */
+				{
+					/* Will Display Error And Go To The Main Option Menu Again */
+					WRONG_PASS = 0;
+					counter=0;
+					LCD_clearScreen();
+					LCD_displayString("ERROR");
+					_delay_ms(60000);
+					STEP2 = 1;
+				}
+			}
+		}
+	}
+}
+

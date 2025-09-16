@@ -1,0 +1,144 @@
+/*
+ * Main.c
+ *
+ *  Created on: Jul 6, 2024
+ *      Author: dell
+*/
+#include<avr/io.h>
+#include "lcd.h"
+#include "keypad.h"
+#include "uart.h"
+#include <util/delay.h>
+//#include "timer1.h"
+
+// Function prototypes
+void createPassword();
+void mainMenu();
+void openDoor();
+void changePassword();
+void requestPassword(uint8* prompt, uint8* password);
+
+int main()
+{
+    // Initialize LCD, Keypad, and UART
+	UART_ConfigType UART_Configurations = {BITS8,EVEN_PARITY,STOP_1BIT,BDR6};
+	//SREG |= (1<<7);
+	LCD_init();
+	UART_init(&UART_Configurations);
+
+    // Password creation
+    createPassword();
+
+    // Main options loop
+    while (1)
+    {
+        mainMenu();
+    }
+}
+
+void createPassword()
+{
+    uint8 password1[6] = {0};
+    uint8 password2[6] = {0};
+
+    while (1)
+    {
+        requestPassword("Plz enter Pass", password1);
+        requestPassword("Plz re-enter", password2);
+
+        if (strcmp(password1, password2) == 0)
+        {
+            // Send password to Control_ECU
+        	UART_sendString(password1);
+            break;
+        }
+        else
+        {
+        	LCD_clearScreen();
+            LCD_displayString("Pass don't match");
+            _delay_ms(1000);
+        }
+    }
+}
+
+void mainMenu()
+{
+	LCD_clearScreen();
+    LCD_displayString("1: Open Door");
+    LCD_moveCursor(1,0);
+    LCD_displayString("2: Change Password");
+
+    uint8 key = KEYPAD_getPressedKey();
+    if (key == '1')
+    {
+        openDoor();
+    }
+    else if (key == '2')
+    {
+        changePassword();
+    }
+}
+
+void openDoor()
+{
+    uint8 password[6] = {0};
+    requestPassword("Please Enter Password", password);
+    UART_sendString(password);
+
+    // Receive response from Control_ECU
+    uint8 response = UART_recieveByte();
+    if (response == '1')
+    {
+    	LCD_clearScreen();
+        LCD_displayString("Door is Unlocking");
+        _delay_ms(15000);
+        LCD_clearScreen();
+        LCD_displayString("Door is Locking");
+        _delay_ms(15000);
+    }
+    else
+    {
+    	LCD_clearScreen();
+        LCD_displayString("Incorrect Password");
+        _delay_ms(1000);
+    }
+}
+
+void changePassword()
+{
+    uint8 password[6] = {0};
+    requestPassword("Please Enter Password", password);
+    UART_sendString(password);
+
+    // Receive response from Control_ECU
+    uint8 response = UART_recieveByte();
+    if (response == '1')
+    {
+        createPassword();
+    }
+    else
+    {
+    	LCD_clearScreen();
+        LCD_displayString("Incorrect Password");
+        _delay_ms(1000);
+    }
+}
+
+void requestPassword(uint8* prompt, uint8* password)
+{
+	LCD_clearScreen();
+	LCD_displayString(prompt);
+    for (uint8 i = 0; i < 10; i++)
+    {
+        password[i] = KEYPAD_getPressedKey();
+        if(KEYPAD_getPressedKey()=='=')
+        {
+        	break;
+        }
+        LCD_moveCursor(1,i);
+        LCD_displayCharacter('*');
+        _delay_ms(500);
+    }
+    password[5] = '\0';
+    // Assuming 'Enter' key is pressed after entering the password
+}

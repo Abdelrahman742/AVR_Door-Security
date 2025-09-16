@@ -1,0 +1,18 @@
+/*
+ * Main.c
+ *
+ *  Created on: Jul 6, 2024
+ *      Author: dell
+ */
+#include<avr/io.h>
+#include "lcd.h"
+#include "keypad.h"
+
+int main()
+{
+	SREG |= (1<<7);
+	while(1)
+	{
+
+	}
+}

@@ -1,0 +1,3753 @@
+00:09:23 **** Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:13:
+../uart.h:20: error: redeclaration of enumerator 'Reserved'
+../uart.h:20: error: previous definition of 'Reserved' was here
+../uart.h:20: error: redeclaration of enumerator 'Reserved'
+../uart.h:20: error: previous definition of 'Reserved' was here
+../uart.h:25: error: redeclaration of enumerator 'Reserved'
+../uart.h:20: error: previous definition of 'Reserved' was here
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:11:50 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:13:
+../uart.h:20: error: redeclaration of enumerator 'Reserved'
+../uart.h:20: error: previous definition of 'Reserved' was here
+../uart.h:20: error: redeclaration of enumerator 'Reserved'
+../uart.h:20: error: previous definition of 'Reserved' was here
+../uart.h:25: error: redeclaration of enumerator 'Reserved'
+../uart.h:20: error: previous definition of 'Reserved' was here
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:12:42 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+Finished building: ../Main2.c
+ 
+Building file: ../buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"buzzer.d" -MT"buzzer.o" -c -o "buzzer.o" "../buzzer.c"
+Finished building: ../buzzer.c
+ 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building file: ../external_eeprom.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"external_eeprom.d" -MT"external_eeprom.o" -c -o "external_eeprom.o" "../external_eeprom.c"
+Finished building: ../external_eeprom.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building file: ../timer1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"timer1.d" -MT"timer1.o" -c -o "timer1.o" "../timer1.c"
+../timer1.c: In function 'Timer1_setCallBack':
+../timer1.c:60: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer1.c
+ 
+Building file: ../twi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"twi.d" -MT"twi.o" -c -o "twi.o" "../twi.c"
+Finished building: ../twi.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4006 bytes (12.2% Full)
+(.text + .data + .bootloader)
+
+Data:         14 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:56:36 **** Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+../Main2.c: In function 'main':
+../Main2.c:22: error: invalid initializer
+../Main2.c:23: error: invalid initializer
+../Main2.c:71: warning: passing argument 2 of 'EEPROM_writeByte' makes integer from pointer without a cast
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:00:06 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+../Main2.c:17: error: invalid initializer
+../Main2.c:18: error: invalid initializer
+../Main2.c: In function 'EEPROM_writePassword':
+../Main2.c:43: error: subscripted value is neither array nor pointer
+../Main2.c: In function 'main':
+../Main2.c:88: warning: passing argument 2 of 'EEPROM_writeByte' makes integer from pointer without a cast
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:01:01 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+../Main2.c:17: error: invalid initializer
+../Main2.c:18: error: invalid initializer
+../Main2.c: In function 'EEPROM_writePassword':
+../Main2.c:45: error: subscripted value is neither array nor pointer
+../Main2.c:42: warning: unused variable 'i'
+../Main2.c: In function 'main':
+../Main2.c:90: warning: passing argument 2 of 'EEPROM_writeByte' makes integer from pointer without a cast
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:01:20 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+../Main2.c:17: error: invalid initializer
+../Main2.c:18: error: invalid initializer
+../Main2.c: In function 'EEPROM_writePassword':
+../Main2.c:45: error: subscripted value is neither array nor pointer
+../Main2.c: In function 'main':
+../Main2.c:90: warning: passing argument 2 of 'EEPROM_writeByte' makes integer from pointer without a cast
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:02:18 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+../Main2.c: In function 'EEPROM_writePassword':
+../Main2.c:45: error: subscripted value is neither array nor pointer
+../Main2.c: In function 'main':
+../Main2.c:90: warning: passing argument 2 of 'EEPROM_writeByte' makes integer from pointer without a cast
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:03:18 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+../Main2.c: In function 'EEPROM_writePassword':
+../Main2.c:45: error: subscripted value is neither array nor pointer
+../Main2.c: In function 'main':
+../Main2.c:90: warning: passing argument 2 of 'EEPROM_writeByte' makes integer from pointer without a cast
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:03:31 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+../Main2.c: In function 'EEPROM_writePassword':
+../Main2.c:45: error: subscripted value is neither array nor pointer
+../Main2.c: In function 'main':
+../Main2.c:90: warning: passing argument 2 of 'EEPROM_writeByte' makes integer from pointer without a cast
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:08:59 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+../Main2.c: In function 'main':
+../Main2.c:90: warning: passing argument 2 of 'EEPROM_writeByte' makes integer from pointer without a cast
+Finished building: ../Main2.c
+ 
+Building file: ../buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"buzzer.d" -MT"buzzer.o" -c -o "buzzer.o" "../buzzer.c"
+Finished building: ../buzzer.c
+ 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building file: ../external_eeprom.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"external_eeprom.d" -MT"external_eeprom.o" -c -o "external_eeprom.o" "../external_eeprom.c"
+Finished building: ../external_eeprom.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building file: ../timer1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"timer1.d" -MT"timer1.o" -c -o "timer1.o" "../timer1.c"
+../timer1.c: In function 'Timer1_setCallBack':
+../timer1.c:60: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer1.c
+ 
+Building file: ../twi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"twi.d" -MT"twi.o" -c -o "twi.o" "../twi.c"
+Finished building: ../twi.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4366 bytes (13.3% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:10:07 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+../Main2.c: In function 'EEPROM_writePassword':
+../Main2.c:45: error: subscripted value is neither array nor pointer
+../Main2.c: In function 'main':
+../Main2.c:90: warning: passing argument 2 of 'EEPROM_writeByte' makes integer from pointer without a cast
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:12:16 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+../Main2.c: In function 'main':
+../Main2.c:90: warning: passing argument 1 of 'EEPROM_writePassword' from incompatible pointer type
+Finished building: ../Main2.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4386 bytes (13.4% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:12:24 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4386 bytes (13.4% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:18:28 **** Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+../Main2.c: In function 'Turn_on':
+../Main2.c:88: error: too few arguments to function 'DcMotor_Rotate'
+../Main2.c:91: error: too few arguments to function 'DcMotor_Rotate'
+../Main2.c:93: error: too few arguments to function 'DcMotor_Rotate'
+../Main2.c: In function 'main':
+../Main2.c:106: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:107: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:123: warning: passing argument 1 of 'EEPROM_writePassword' discards qualifiers from pointer target type
+../Main2.c:134: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:135: warning: passing argument 1 of 'EEPROM_verifyPassword' discards qualifiers from pointer target type
+../Main2.c:139: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:140: warning: passing argument 1 of 'EEPROM_verifyPassword' discards qualifiers from pointer target type
+../Main2.c:148: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:149: warning: passing argument 1 of 'EEPROM_verifyPassword' discards qualifiers from pointer target type
+../Main2.c:156: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:157: warning: passing argument 1 of 'EEPROM_verifyPassword' discards qualifiers from pointer target type
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:19:49 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+../Main2.c: In function 'main':
+../Main2.c:106: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:107: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:123: warning: passing argument 1 of 'EEPROM_writePassword' discards qualifiers from pointer target type
+../Main2.c:134: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:135: warning: passing argument 1 of 'EEPROM_verifyPassword' discards qualifiers from pointer target type
+../Main2.c:139: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:140: warning: passing argument 1 of 'EEPROM_verifyPassword' discards qualifiers from pointer target type
+../Main2.c:148: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:149: warning: passing argument 1 of 'EEPROM_verifyPassword' discards qualifiers from pointer target type
+../Main2.c:156: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:157: warning: passing argument 1 of 'EEPROM_verifyPassword' discards qualifiers from pointer target type
+Finished building: ../Main2.c
+ 
+Building file: ../buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"buzzer.d" -MT"buzzer.o" -c -o "buzzer.o" "../buzzer.c"
+Finished building: ../buzzer.c
+ 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building file: ../external_eeprom.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"external_eeprom.d" -MT"external_eeprom.o" -c -o "external_eeprom.o" "../external_eeprom.c"
+Finished building: ../external_eeprom.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building file: ../timer1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"timer1.d" -MT"timer1.o" -c -o "timer1.o" "../timer1.c"
+../timer1.c: In function 'Timer1_setCallBack':
+../timer1.c:60: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer1.c
+ 
+Building file: ../twi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"twi.d" -MT"twi.o" -c -o "twi.o" "../twi.c"
+Finished building: ../twi.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4924 bytes (15.0% Full)
+(.text + .data + .bootloader)
+
+Data:         31 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:20:17 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4924 bytes (15.0% Full)
+(.text + .data + .bootloader)
+
+Data:         31 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:23:01 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+../Main2.c: In function 'main':
+../Main2.c:106: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:107: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:123: warning: passing argument 1 of 'EEPROM_writePassword' discards qualifiers from pointer target type
+../Main2.c:125: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:126: warning: passing argument 1 of 'EEPROM_verifyPassword' discards qualifiers from pointer target type
+../Main2.c:130: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:131: warning: passing argument 1 of 'EEPROM_verifyPassword' discards qualifiers from pointer target type
+../Main2.c:139: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:140: warning: passing argument 1 of 'EEPROM_verifyPassword' discards qualifiers from pointer target type
+../Main2.c:147: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:148: warning: passing argument 1 of 'EEPROM_verifyPassword' discards qualifiers from pointer target type
+Finished building: ../Main2.c
+ 
+Building file: ../buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"buzzer.d" -MT"buzzer.o" -c -o "buzzer.o" "../buzzer.c"
+Finished building: ../buzzer.c
+ 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building file: ../external_eeprom.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"external_eeprom.d" -MT"external_eeprom.o" -c -o "external_eeprom.o" "../external_eeprom.c"
+Finished building: ../external_eeprom.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building file: ../timer1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"timer1.d" -MT"timer1.o" -c -o "timer1.o" "../timer1.c"
+../timer1.c: In function 'Timer1_setCallBack':
+../timer1.c:60: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer1.c
+ 
+Building file: ../twi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"twi.d" -MT"twi.o" -c -o "twi.o" "../twi.c"
+Finished building: ../twi.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4908 bytes (15.0% Full)
+(.text + .data + .bootloader)
+
+Data:         31 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:23:05 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4908 bytes (15.0% Full)
+(.text + .data + .bootloader)
+
+Data:         31 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:29:50 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+../Main2.c: In function 'main':
+../Main2.c:106: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:107: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:118: warning: passing argument 1 of 'EEPROM_writePassword' discards qualifiers from pointer target type
+../Main2.c:120: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:121: warning: passing argument 1 of 'EEPROM_verifyPassword' discards qualifiers from pointer target type
+../Main2.c:125: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:126: warning: passing argument 1 of 'EEPROM_verifyPassword' discards qualifiers from pointer target type
+../Main2.c:134: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:135: warning: passing argument 1 of 'EEPROM_verifyPassword' discards qualifiers from pointer target type
+../Main2.c:142: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:143: warning: passing argument 1 of 'EEPROM_verifyPassword' discards qualifiers from pointer target type
+Finished building: ../Main2.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4900 bytes (15.0% Full)
+(.text + .data + .bootloader)
+
+Data:         32 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:29:52 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4900 bytes (15.0% Full)
+(.text + .data + .bootloader)
+
+Data:         32 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:32:27 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+../Main2.c: In function 'main':
+../Main2.c:105: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:106: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:117: warning: passing argument 1 of 'EEPROM_writePassword' discards qualifiers from pointer target type
+../Main2.c:118: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:119: warning: passing argument 1 of 'EEPROM_verifyPassword' discards qualifiers from pointer target type
+../Main2.c:123: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:124: warning: passing argument 1 of 'EEPROM_verifyPassword' discards qualifiers from pointer target type
+../Main2.c:132: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:133: warning: passing argument 1 of 'EEPROM_verifyPassword' discards qualifiers from pointer target type
+../Main2.c:140: warning: passing argument 1 of 'Recive_pass' discards qualifiers from pointer target type
+../Main2.c:141: warning: passing argument 1 of 'EEPROM_verifyPassword' discards qualifiers from pointer target type
+Finished building: ../Main2.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4896 bytes (14.9% Full)
+(.text + .data + .bootloader)
+
+Data:         32 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:32:29 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4896 bytes (14.9% Full)
+(.text + .data + .bootloader)
+
+Data:         32 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:40:09 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+../Main2.c: In function 'main':
+../Main2.c:118: warning: statement with no effect
+Finished building: ../Main2.c
+ 
+Building file: ../buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"buzzer.d" -MT"buzzer.o" -c -o "buzzer.o" "../buzzer.c"
+Finished building: ../buzzer.c
+ 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building file: ../external_eeprom.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"external_eeprom.d" -MT"external_eeprom.o" -c -o "external_eeprom.o" "../external_eeprom.c"
+Finished building: ../external_eeprom.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building file: ../timer1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"timer1.d" -MT"timer1.o" -c -o "timer1.o" "../timer1.c"
+../timer1.c: In function 'Timer1_setCallBack':
+../timer1.c:60: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer1.c
+ 
+Building file: ../twi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"twi.d" -MT"twi.o" -c -o "twi.o" "../twi.c"
+Finished building: ../twi.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4904 bytes (15.0% Full)
+(.text + .data + .bootloader)
+
+Data:         32 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:40:40 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+Finished building: ../Main2.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4908 bytes (15.0% Full)
+(.text + .data + .bootloader)
+
+Data:         32 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:41:48 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+Finished building: ../Main2.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4908 bytes (15.0% Full)
+(.text + .data + .bootloader)
+
+Data:         32 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:28:04 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+Finished building: ../Main2.c
+ 
+Building file: ../buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"buzzer.d" -MT"buzzer.o" -c -o "buzzer.o" "../buzzer.c"
+Finished building: ../buzzer.c
+ 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building file: ../external_eeprom.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"external_eeprom.d" -MT"external_eeprom.o" -c -o "external_eeprom.o" "../external_eeprom.c"
+Finished building: ../external_eeprom.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building file: ../timer1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"timer1.d" -MT"timer1.o" -c -o "timer1.o" "../timer1.c"
+../timer1.c: In function 'Timer1_setCallBack':
+../timer1.c:60: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer1.c
+ 
+Building file: ../twi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"twi.d" -MT"twi.o" -c -o "twi.o" "../twi.c"
+Finished building: ../twi.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4930 bytes (15.0% Full)
+(.text + .data + .bootloader)
+
+Data:         32 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:42:20 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+Finished building: ../Main2.c
+ 
+Building file: ../buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"buzzer.d" -MT"buzzer.o" -c -o "buzzer.o" "../buzzer.c"
+Finished building: ../buzzer.c
+ 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building file: ../external_eeprom.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"external_eeprom.d" -MT"external_eeprom.o" -c -o "external_eeprom.o" "../external_eeprom.c"
+Finished building: ../external_eeprom.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building file: ../timer1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"timer1.d" -MT"timer1.o" -c -o "timer1.o" "../timer1.c"
+../timer1.c: In function 'Timer1_setCallBack':
+../timer1.c:60: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer1.c
+ 
+Building file: ../twi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"twi.d" -MT"twi.o" -c -o "twi.o" "../twi.c"
+Finished building: ../twi.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4936 bytes (15.1% Full)
+(.text + .data + .bootloader)
+
+Data:         32 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:43:40 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4974 bytes (15.2% Full)
+(.text + .data + .bootloader)
+
+Data:         32 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:45:06 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+Finished building: ../Main2.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4974 bytes (15.2% Full)
+(.text + .data + .bootloader)
+
+Data:         32 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:56:32 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+Finished building: ../Main2.c
+ 
+Building file: ../buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"buzzer.d" -MT"buzzer.o" -c -o "buzzer.o" "../buzzer.c"
+Finished building: ../buzzer.c
+ 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building file: ../external_eeprom.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"external_eeprom.d" -MT"external_eeprom.o" -c -o "external_eeprom.o" "../external_eeprom.c"
+Finished building: ../external_eeprom.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building file: ../timer1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"timer1.d" -MT"timer1.o" -c -o "timer1.o" "../timer1.c"
+../timer1.c: In function 'Timer1_setCallBack':
+../timer1.c:60: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer1.c
+ 
+Building file: ../twi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"twi.d" -MT"twi.o" -c -o "twi.o" "../twi.c"
+Finished building: ../twi.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4936 bytes (15.1% Full)
+(.text + .data + .bootloader)
+
+Data:         32 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:10:50 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+Finished building: ../Main2.c
+ 
+Building file: ../buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"buzzer.d" -MT"buzzer.o" -c -o "buzzer.o" "../buzzer.c"
+Finished building: ../buzzer.c
+ 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building file: ../external_eeprom.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"external_eeprom.d" -MT"external_eeprom.o" -c -o "external_eeprom.o" "../external_eeprom.c"
+Finished building: ../external_eeprom.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building file: ../timer1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"timer1.d" -MT"timer1.o" -c -o "timer1.o" "../timer1.c"
+../timer1.c: In function 'Timer1_setCallBack':
+../timer1.c:60: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer1.c
+ 
+Building file: ../twi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"twi.d" -MT"twi.o" -c -o "twi.o" "../twi.c"
+Finished building: ../twi.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4926 bytes (15.0% Full)
+(.text + .data + .bootloader)
+
+Data:         32 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:22:26 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+../uart.c:33:2: warning: "/*" within comment
+../uart.c:36:2: warning: "/*" within comment
+../uart.c:47:2: warning: "/*" within comment
+../uart.c:56:2: warning: "/*" within comment
+../uart.c:62:2: warning: "/*" within comment
+../uart.c:65:2: warning: "/*" within comment
+Finished building: ../uart.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4994 bytes (15.2% Full)
+(.text + .data + .bootloader)
+
+Data:         32 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:22:56 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+../uart.c:33:2: warning: "/*" within comment
+../uart.c:36:2: warning: "/*" within comment
+../uart.c:47:2: warning: "/*" within comment
+../uart.c:56:2: warning: "/*" within comment
+../uart.c:62:2: warning: "/*" within comment
+../uart.c:65:2: warning: "/*" within comment
+Finished building: ../uart.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4970 bytes (15.2% Full)
+(.text + .data + .bootloader)
+
+Data:         32 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:23:31 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4970 bytes (15.2% Full)
+(.text + .data + .bootloader)
+
+Data:         32 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:34:42 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+Finished building: ../Main2.c
+ 
+Building file: ../buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"buzzer.d" -MT"buzzer.o" -c -o "buzzer.o" "../buzzer.c"
+Finished building: ../buzzer.c
+ 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building file: ../external_eeprom.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"external_eeprom.d" -MT"external_eeprom.o" -c -o "external_eeprom.o" "../external_eeprom.c"
+Finished building: ../external_eeprom.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building file: ../timer1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"timer1.d" -MT"timer1.o" -c -o "timer1.o" "../timer1.c"
+../timer1.c: In function 'Timer1_setCallBack':
+../timer1.c:60: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer1.c
+ 
+Building file: ../twi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"twi.d" -MT"twi.o" -c -o "twi.o" "../twi.c"
+Finished building: ../twi.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4970 bytes (15.2% Full)
+(.text + .data + .bootloader)
+
+Data:         32 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:38:55 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+../Main2.c: In function 'INIT':
+../Main2.c:30: error: 'BITS8' undeclared (first use in this function)
+../Main2.c:30: error: (Each undeclared identifier is reported only once
+../Main2.c:30: error: for each function it appears in.)
+../Main2.c:30: error: 'EVEN_PARITY' undeclared (first use in this function)
+../Main2.c:30: error: 'STOP_1BIT' undeclared (first use in this function)
+../Main2.c:30: error: 'BDR6' undeclared (first use in this function)
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:39:06 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+Finished building: ../Main2.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4970 bytes (15.2% Full)
+(.text + .data + .bootloader)
+
+Data:         32 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:44:04 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+Finished building: ../Main2.c
+ 
+Building file: ../buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"buzzer.d" -MT"buzzer.o" -c -o "buzzer.o" "../buzzer.c"
+Finished building: ../buzzer.c
+ 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building file: ../external_eeprom.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"external_eeprom.d" -MT"external_eeprom.o" -c -o "external_eeprom.o" "../external_eeprom.c"
+Finished building: ../external_eeprom.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building file: ../timer1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"timer1.d" -MT"timer1.o" -c -o "timer1.o" "../timer1.c"
+../timer1.c: In function 'Timer1_setCallBack':
+../timer1.c:60: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer1.c
+ 
+Building file: ../twi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"twi.d" -MT"twi.o" -c -o "twi.o" "../twi.c"
+Finished building: ../twi.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4970 bytes (15.2% Full)
+(.text + .data + .bootloader)
+
+Data:         32 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:00:56 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:183:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'main':
+../Main2.c:316: warning: implicit declaration of function 'DCMotor_init'
+../Main2.c:317: warning: implicit declaration of function 'LCD_init'
+../Main2.c:318: warning: implicit declaration of function 'LCD_displayString'
+../Main2.c:348: warning: implicit declaration of function 'LCD_clearScreen'
+../Main2.c:349: warning: implicit declaration of function 'LCD_intgerToString'
+../Main2.c:392: warning: implicit declaration of function 'DCMotor_Rotate'
+Finished building: ../Main2.c
+ 
+Building file: ../external_eeprom.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"external_eeprom.d" -MT"external_eeprom.o" -c -o "external_eeprom.o" "../external_eeprom.c"
+Finished building: ../external_eeprom.c
+ 
+Building file: ../twi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"twi.d" -MT"twi.o" -c -o "twi.o" "../twi.c"
+../twi.c:21:5: warning: "/*" within comment
+../twi.c:24:5: warning: "/*" within comment
+../twi.c:28:23: warning: "/*" within comment
+Finished building: ../twi.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+./Main2.o: In function `main':
+../Main2.c:316: undefined reference to `DCMotor_init'
+../Main2.c:317: undefined reference to `LCD_init'
+../Main2.c:318: undefined reference to `LCD_displayString'
+../Main2.c:341: undefined reference to `LCD_displayString'
+../Main2.c:348: undefined reference to `LCD_clearScreen'
+../Main2.c:349: undefined reference to `LCD_intgerToString'
+../Main2.c:352: undefined reference to `LCD_clearScreen'
+../Main2.c:356: undefined reference to `LCD_intgerToString'
+../Main2.c:378: undefined reference to `LCD_clearScreen'
+../Main2.c:379: undefined reference to `LCD_displayString'
+../Main2.c:389: undefined reference to `LCD_clearScreen'
+../Main2.c:390: undefined reference to `LCD_displayString'
+../Main2.c:392: undefined reference to `DCMotor_Rotate'
+../Main2.c:394: undefined reference to `DCMotor_Rotate'
+../Main2.c:397: undefined reference to `DCMotor_Rotate'
+../Main2.c:399: undefined reference to `DCMotor_Rotate'
+../Main2.c:411: undefined reference to `LCD_clearScreen'
+../Main2.c:412: undefined reference to `LCD_displayString'
+make: *** [MC2.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:03:22 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:183:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c:349:72: warning: "/*" within comment
+../Main2.c: In function 'main':
+../Main2.c:392: error: too many arguments to function 'DcMotor_Rotate'
+../Main2.c:394: error: too many arguments to function 'DcMotor_Rotate'
+../Main2.c:397: error: too many arguments to function 'DcMotor_Rotate'
+../Main2.c:399: error: too many arguments to function 'DcMotor_Rotate'
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:03:48 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:183:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c:349:72: warning: "/*" within comment
+Finished building: ../Main2.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9826 bytes (30.0% Full)
+(.text + .data + .bootloader)
+
+Data:         50 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:03:51 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9826 bytes (30.0% Full)
+(.text + .data + .bootloader)
+
+Data:         50 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:39:43 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+Finished building: ../Main2.c
+ 
+Building file: ../buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"buzzer.d" -MT"buzzer.o" -c -o "buzzer.o" "../buzzer.c"
+Finished building: ../buzzer.c
+ 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building file: ../external_eeprom.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"external_eeprom.d" -MT"external_eeprom.o" -c -o "external_eeprom.o" "../external_eeprom.c"
+Finished building: ../external_eeprom.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building file: ../timer1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"timer1.d" -MT"timer1.o" -c -o "timer1.o" "../timer1.c"
+../timer1.c: In function 'Timer1_setCallBack':
+../timer1.c:60: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer1.c
+ 
+Building file: ../twi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"twi.d" -MT"twi.o" -c -o "twi.o" "../twi.c"
+../twi.c:21:5: warning: "/*" within comment
+../twi.c:24:5: warning: "/*" within comment
+../twi.c:28:23: warning: "/*" within comment
+Finished building: ../twi.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5026 bytes (15.3% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:39:46 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5026 bytes (15.3% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:08:18 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+Finished building: ../Main2.c
+ 
+Building file: ../buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"buzzer.d" -MT"buzzer.o" -c -o "buzzer.o" "../buzzer.c"
+Finished building: ../buzzer.c
+ 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building file: ../external_eeprom.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"external_eeprom.d" -MT"external_eeprom.o" -c -o "external_eeprom.o" "../external_eeprom.c"
+Finished building: ../external_eeprom.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building file: ../timer1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"timer1.d" -MT"timer1.o" -c -o "timer1.o" "../timer1.c"
+../timer1.c: In function 'Timer1_setCallBack':
+../timer1.c:60: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer1.c
+ 
+Building file: ../twi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"twi.d" -MT"twi.o" -c -o "twi.o" "../twi.c"
+../twi.c:21:5: warning: "/*" within comment
+../twi.c:24:5: warning: "/*" within comment
+../twi.c:28:23: warning: "/*" within comment
+Finished building: ../twi.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5050 bytes (15.4% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:08:22 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5050 bytes (15.4% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:10:37 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+Finished building: ../Main2.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5052 bytes (15.4% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:55:23 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+Finished building: ../Main2.c
+ 
+Building file: ../buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"buzzer.d" -MT"buzzer.o" -c -o "buzzer.o" "../buzzer.c"
+Finished building: ../buzzer.c
+ 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building file: ../external_eeprom.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"external_eeprom.d" -MT"external_eeprom.o" -c -o "external_eeprom.o" "../external_eeprom.c"
+Finished building: ../external_eeprom.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building file: ../timer1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"timer1.d" -MT"timer1.o" -c -o "timer1.o" "../timer1.c"
+../timer1.c: In function 'Timer1_setCallBack':
+../timer1.c:60: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer1.c
+ 
+Building file: ../twi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"twi.d" -MT"twi.o" -c -o "twi.o" "../twi.c"
+../twi.c:21:5: warning: "/*" within comment
+../twi.c:24:5: warning: "/*" within comment
+../twi.c:28:23: warning: "/*" within comment
+Finished building: ../twi.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5076 bytes (15.5% Full)
+(.text + .data + .bootloader)
+
+Data:         37 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:55:27 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5076 bytes (15.5% Full)
+(.text + .data + .bootloader)
+
+Data:         37 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:02:56 **** Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+../Main2.c: In function 'STEP1':
+../Main2.c:36: warning: implicit declaration of function 'Recive_pass'
+../Main2.c:47: warning: implicit declaration of function 'EEPROM_writePassword'
+../Main2.c: At top level:
+../Main2.c:58: warning: conflicting types for 'EEPROM_writePassword'
+../Main2.c:47: warning: previous implicit declaration of 'EEPROM_writePassword' was here
+../Main2.c:88: warning: conflicting types for 'Recive_pass'
+../Main2.c:36: warning: previous implicit declaration of 'Recive_pass' was here
+../Main2.c: In function 'Turn_on':
+../Main2.c:98: warning: implicit declaration of function '_delay_ms'
+../Main2.c:101: warning: implicit declaration of function 'Timer1_delay'
+Finished building: ../Main2.c
+ 
+Building file: ../buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"buzzer.d" -MT"buzzer.o" -c -o "buzzer.o" "../buzzer.c"
+Finished building: ../buzzer.c
+ 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building file: ../external_eeprom.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"external_eeprom.d" -MT"external_eeprom.o" -c -o "external_eeprom.o" "../external_eeprom.c"
+Finished building: ../external_eeprom.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building file: ../timer1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"timer1.d" -MT"timer1.o" -c -o "timer1.o" "../timer1.c"
+../timer1.c: In function 'Timer1_setCallBack':
+../timer1.c:60: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer1.c
+ 
+Building file: ../twi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"twi.d" -MT"twi.o" -c -o "twi.o" "../twi.c"
+../twi.c:21:5: warning: "/*" within comment
+../twi.c:24:5: warning: "/*" within comment
+../twi.c:28:23: warning: "/*" within comment
+Finished building: ../twi.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+./Main2.o: In function `main':
+../Main2.c:156: undefined reference to `_delay_ms'
+../Main2.c:157: undefined reference to `Timer1_delay'
+../Main2.c:157: undefined reference to `Timer1_delay'
+../Main2.c:158: undefined reference to `_delay_ms'
+../Main2.c:159: undefined reference to `_delay_ms'
+make: *** [MC2.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:04:16 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+./Main2.o: In function `main':
+../Main2.c:156: undefined reference to `_delay_ms'
+../Main2.c:157: undefined reference to `Timer1_delay'
+../Main2.c:157: undefined reference to `Timer1_delay'
+../Main2.c:158: undefined reference to `_delay_ms'
+../Main2.c:159: undefined reference to `_delay_ms'
+make: *** [MC2.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:05:50 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+../Main2.c: In function 'STEP1':
+../Main2.c:36: warning: implicit declaration of function 'Recive_pass'
+../Main2.c:47: warning: implicit declaration of function 'EEPROM_writePassword'
+../Main2.c: At top level:
+../Main2.c:58: warning: conflicting types for 'EEPROM_writePassword'
+../Main2.c:47: warning: previous implicit declaration of 'EEPROM_writePassword' was here
+../Main2.c:88: warning: conflicting types for 'Recive_pass'
+../Main2.c:36: warning: previous implicit declaration of 'Recive_pass' was here
+../Main2.c: In function 'Turn_on':
+../Main2.c:98: warning: implicit declaration of function '_delay_ms'
+Finished building: ../Main2.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+./Main2.o: In function `main':
+../Main2.c:154: undefined reference to `_delay_ms'
+../Main2.c:155: undefined reference to `_delay_ms'
+../Main2.c:155: undefined reference to `_delay_ms'
+../Main2.c:156: undefined reference to `_delay_ms'
+../Main2.c:157: undefined reference to `_delay_ms'
+make: *** [MC2.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:05:53 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+./Main2.o: In function `main':
+../Main2.c:154: undefined reference to `_delay_ms'
+../Main2.c:155: undefined reference to `_delay_ms'
+../Main2.c:155: undefined reference to `_delay_ms'
+../Main2.c:156: undefined reference to `_delay_ms'
+../Main2.c:157: undefined reference to `_delay_ms'
+make: *** [MC2.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:06:35 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'STEP1':
+../Main2.c:37: warning: implicit declaration of function 'Recive_pass'
+../Main2.c:48: warning: implicit declaration of function 'EEPROM_writePassword'
+../Main2.c: At top level:
+../Main2.c:59: warning: conflicting types for 'EEPROM_writePassword'
+../Main2.c:48: warning: previous implicit declaration of 'EEPROM_writePassword' was here
+../Main2.c:89: warning: conflicting types for 'Recive_pass'
+../Main2.c:37: warning: previous implicit declaration of 'Recive_pass' was here
+Finished building: ../Main2.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8924 bytes (27.2% Full)
+(.text + .data + .bootloader)
+
+Data:         45 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:06:38 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8924 bytes (27.2% Full)
+(.text + .data + .bootloader)
+
+Data:         45 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:24:12 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'STEP1':
+../Main2.c:37: warning: implicit declaration of function 'Recive_pass'
+../Main2.c:48: warning: implicit declaration of function 'EEPROM_writePassword'
+../Main2.c: At top level:
+../Main2.c:59: warning: conflicting types for 'EEPROM_writePassword'
+../Main2.c:48: warning: previous implicit declaration of 'EEPROM_writePassword' was here
+../Main2.c:89: warning: conflicting types for 'Recive_pass'
+../Main2.c:37: warning: previous implicit declaration of 'Recive_pass' was here
+../Main2.c: In function 'STEP2':
+../Main2.c:162: warning: 'main' is normally a non-static function
+../Main2.c:185: error: expected declaration or statement at end of input
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:24:39 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'STEP1':
+../Main2.c:37: warning: implicit declaration of function 'Recive_pass'
+../Main2.c:48: warning: implicit declaration of function 'EEPROM_writePassword'
+../Main2.c: At top level:
+../Main2.c:59: warning: conflicting types for 'EEPROM_writePassword'
+../Main2.c:48: warning: previous implicit declaration of 'EEPROM_writePassword' was here
+../Main2.c:89: warning: conflicting types for 'Recive_pass'
+../Main2.c:37: warning: previous implicit declaration of 'Recive_pass' was here
+../Main2.c: In function 'STEP2':
+../Main2.c:162: warning: 'main' is normally a non-static function
+../Main2.c:185: error: expected declaration or statement at end of input
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:24:40 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'STEP1':
+../Main2.c:37: warning: implicit declaration of function 'Recive_pass'
+../Main2.c:48: warning: implicit declaration of function 'EEPROM_writePassword'
+../Main2.c: At top level:
+../Main2.c:59: warning: conflicting types for 'EEPROM_writePassword'
+../Main2.c:48: warning: previous implicit declaration of 'EEPROM_writePassword' was here
+../Main2.c:89: warning: conflicting types for 'Recive_pass'
+../Main2.c:37: warning: previous implicit declaration of 'Recive_pass' was here
+../Main2.c: In function 'STEP2':
+../Main2.c:162: warning: 'main' is normally a non-static function
+../Main2.c:185: error: expected declaration or statement at end of input
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:25:11 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'STEP1':
+../Main2.c:37: warning: implicit declaration of function 'Recive_pass'
+../Main2.c:48: warning: implicit declaration of function 'EEPROM_writePassword'
+../Main2.c: At top level:
+../Main2.c:59: warning: conflicting types for 'EEPROM_writePassword'
+../Main2.c:48: warning: previous implicit declaration of 'EEPROM_writePassword' was here
+../Main2.c:89: warning: conflicting types for 'Recive_pass'
+../Main2.c:37: warning: previous implicit declaration of 'Recive_pass' was here
+../Main2.c: In function 'STEP2':
+../Main2.c:162: warning: 'main' is normally a non-static function
+../Main2.c:185: error: expected declaration or statement at end of input
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:25:12 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'STEP1':
+../Main2.c:37: warning: implicit declaration of function 'Recive_pass'
+../Main2.c:48: warning: implicit declaration of function 'EEPROM_writePassword'
+../Main2.c: At top level:
+../Main2.c:59: warning: conflicting types for 'EEPROM_writePassword'
+../Main2.c:48: warning: previous implicit declaration of 'EEPROM_writePassword' was here
+../Main2.c:89: warning: conflicting types for 'Recive_pass'
+../Main2.c:37: warning: previous implicit declaration of 'Recive_pass' was here
+../Main2.c: In function 'STEP2':
+../Main2.c:162: warning: 'main' is normally a non-static function
+../Main2.c:185: error: expected declaration or statement at end of input
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:27:12 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'STEP1':
+../Main2.c:37: warning: implicit declaration of function 'Recive_pass'
+../Main2.c:48: warning: implicit declaration of function 'EEPROM_writePassword'
+../Main2.c: At top level:
+../Main2.c:59: warning: conflicting types for 'EEPROM_writePassword'
+../Main2.c:48: warning: previous implicit declaration of 'EEPROM_writePassword' was here
+../Main2.c:89: warning: conflicting types for 'Recive_pass'
+../Main2.c:37: warning: previous implicit declaration of 'Recive_pass' was here
+../Main2.c: In function 'STEP2':
+../Main2.c:162: warning: 'main' is normally a non-static function
+../Main2.c:185: error: expected declaration or statement at end of input
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:28:38 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'STEP1':
+../Main2.c:37: warning: implicit declaration of function 'Recive_pass'
+../Main2.c:48: warning: implicit declaration of function 'EEPROM_writePassword'
+../Main2.c: At top level:
+../Main2.c:59: warning: conflicting types for 'EEPROM_writePassword'
+../Main2.c:48: warning: previous implicit declaration of 'EEPROM_writePassword' was here
+../Main2.c:89: warning: conflicting types for 'Recive_pass'
+../Main2.c:37: warning: previous implicit declaration of 'Recive_pass' was here
+../Main2.c: In function 'STEP2':
+../Main2.c:161: warning: 'main' is normally a non-static function
+../Main2.c:184: error: expected declaration or statement at end of input
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:29:31 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'STEP1':
+../Main2.c:37: warning: implicit declaration of function 'Recive_pass'
+../Main2.c:48: warning: implicit declaration of function 'EEPROM_writePassword'
+../Main2.c: At top level:
+../Main2.c:59: warning: conflicting types for 'EEPROM_writePassword'
+../Main2.c:48: warning: previous implicit declaration of 'EEPROM_writePassword' was here
+../Main2.c:89: warning: conflicting types for 'Recive_pass'
+../Main2.c:37: warning: previous implicit declaration of 'Recive_pass' was here
+../Main2.c: In function 'STEP2':
+../Main2.c:161: warning: 'main' is normally a non-static function
+../Main2.c:184: error: expected declaration or statement at end of input
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:30:46 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'STEP1':
+../Main2.c:37: warning: implicit declaration of function 'Recive_pass'
+../Main2.c:48: warning: implicit declaration of function 'EEPROM_writePassword'
+../Main2.c: At top level:
+../Main2.c:59: warning: conflicting types for 'EEPROM_writePassword'
+../Main2.c:48: warning: previous implicit declaration of 'EEPROM_writePassword' was here
+../Main2.c:89: warning: conflicting types for 'Recive_pass'
+../Main2.c:37: warning: previous implicit declaration of 'Recive_pass' was here
+Finished building: ../Main2.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9188 bytes (28.0% Full)
+(.text + .data + .bootloader)
+
+Data:         45 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:30:48 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9188 bytes (28.0% Full)
+(.text + .data + .bootloader)
+
+Data:         45 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:35:20 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'STEP1':
+../Main2.c:37: warning: implicit declaration of function 'Recive_pass'
+../Main2.c:48: warning: implicit declaration of function 'EEPROM_writePassword'
+../Main2.c: At top level:
+../Main2.c:59: warning: conflicting types for 'EEPROM_writePassword'
+../Main2.c:48: warning: previous implicit declaration of 'EEPROM_writePassword' was here
+../Main2.c:89: warning: conflicting types for 'Recive_pass'
+../Main2.c:37: warning: previous implicit declaration of 'Recive_pass' was here
+Finished building: ../Main2.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8956 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         45 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:35:22 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8956 bytes (27.3% Full)
+(.text + .data + .bootloader)
+
+Data:         45 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:58:37 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'STEP1':
+../Main2.c:37: warning: implicit declaration of function 'Recive_pass'
+../Main2.c:48: warning: implicit declaration of function 'EEPROM_writePassword'
+../Main2.c: At top level:
+../Main2.c:59: warning: conflicting types for 'EEPROM_writePassword'
+../Main2.c:48: warning: previous implicit declaration of 'EEPROM_writePassword' was here
+../Main2.c:89: warning: conflicting types for 'Recive_pass'
+../Main2.c:37: warning: previous implicit declaration of 'Recive_pass' was here
+Finished building: ../Main2.c
+ 
+Building file: ../buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"buzzer.d" -MT"buzzer.o" -c -o "buzzer.o" "../buzzer.c"
+Finished building: ../buzzer.c
+ 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building file: ../external_eeprom.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"external_eeprom.d" -MT"external_eeprom.o" -c -o "external_eeprom.o" "../external_eeprom.c"
+Finished building: ../external_eeprom.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building file: ../timer1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"timer1.d" -MT"timer1.o" -c -o "timer1.o" "../timer1.c"
+../timer1.c: In function 'Timer1_setCallBack':
+../timer1.c:60: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer1.c
+ 
+Building file: ../twi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"twi.d" -MT"twi.o" -c -o "twi.o" "../twi.c"
+../twi.c:21:5: warning: "/*" within comment
+../twi.c:24:5: warning: "/*" within comment
+../twi.c:28:23: warning: "/*" within comment
+Finished building: ../twi.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9412 bytes (28.7% Full)
+(.text + .data + .bootloader)
+
+Data:         45 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:58:40 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9412 bytes (28.7% Full)
+(.text + .data + .bootloader)
+
+Data:         45 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:00:44 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9412 bytes (28.7% Full)
+(.text + .data + .bootloader)
+
+Data:         45 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:08:11 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'main':
+../Main2.c:44: warning: implicit declaration of function 'EEPROM_readString'
+../Main2.c: In function 'comparePassword':
+../Main2.c:57: warning: implicit declaration of function 'strcmp'
+Finished building: ../Main2.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+./Main2.o: In function `main':
+../Main2.c:44: undefined reference to `EEPROM_readString'
+make: *** [MC2.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:11:16 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'comparePassword':
+../Main2.c:60: warning: implicit declaration of function 'strcmp'
+../Main2.c: In function 'EEPROM_readString':
+../Main2.c:83: error: too few arguments to function 'EEPROM_readByte'
+../Main2.c:87: error: too few arguments to function 'EEPROM_readByte'
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:16:11 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'comparePassword':
+../Main2.c:60: warning: implicit declaration of function 'strcmp'
+Finished building: ../Main2.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8478 bytes (25.9% Full)
+(.text + .data + .bootloader)
+
+Data:         26 bytes (1.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:16:14 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8478 bytes (25.9% Full)
+(.text + .data + .bootloader)
+
+Data:         26 bytes (1.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:01:27 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'main':
+../Main2.c:48: warning: implicit declaration of function 'EEPROM_verifyPassword'
+../Main2.c:49: error: too few arguments to function 'comparePassword'
+../Main2.c: In function 'comparePassword':
+../Main2.c:63: error: number of arguments doesn't match prototype
+../Main2.c:20: error: prototype declaration
+../Main2.c:64: error: 'EEPROM_verifyPassword' undeclared (first use in this function)
+../Main2.c:64: error: (Each undeclared identifier is reported only once
+../Main2.c:64: error: for each function it appears in.)
+../Main2.c: At top level:
+../Main2.c:97: error: conflicting types for 'EEPROM_verifyPassword'
+../Main2.c:48: error: previous implicit declaration of 'EEPROM_verifyPassword' was here
+../Main2.c: In function 'EEPROM_verifyPassword':
+../Main2.c:102: error: 'input_Password' undeclared (first use in this function)
+../Main2.c:102: error: 'stored_Password' undeclared (first use in this function)
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:02:01 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'main':
+../Main2.c:48: warning: implicit declaration of function 'EEPROM_verifyPassword'
+../Main2.c:49: error: too few arguments to function 'comparePassword'
+../Main2.c: In function 'comparePassword':
+../Main2.c:63: error: number of arguments doesn't match prototype
+../Main2.c:20: error: prototype declaration
+../Main2.c: At top level:
+../Main2.c:97: error: conflicting types for 'EEPROM_verifyPassword'
+../Main2.c:48: error: previous implicit declaration of 'EEPROM_verifyPassword' was here
+../Main2.c: In function 'EEPROM_verifyPassword':
+../Main2.c:102: error: 'input_Password' undeclared (first use in this function)
+../Main2.c:102: error: (Each undeclared identifier is reported only once
+../Main2.c:102: error: for each function it appears in.)
+../Main2.c:102: error: 'stored_Password' undeclared (first use in this function)
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:03:36 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'main':
+../Main2.c:48: error: too few arguments to function 'comparePassword'
+../Main2.c: In function 'comparePassword':
+../Main2.c:62: error: number of arguments doesn't match prototype
+../Main2.c:20: error: prototype declaration
+../Main2.c:63: warning: implicit declaration of function 'EEPROM_verifyPassword'
+../Main2.c:63: error: 'receivedPassword' undeclared (first use in this function)
+../Main2.c:63: error: (Each undeclared identifier is reported only once
+../Main2.c:63: error: for each function it appears in.)
+../Main2.c:63: error: 'storedPassword' undeclared (first use in this function)
+../Main2.c: At top level:
+../Main2.c:96: error: conflicting types for 'EEPROM_verifyPassword'
+../Main2.c:63: error: previous implicit declaration of 'EEPROM_verifyPassword' was here
+../Main2.c: In function 'EEPROM_verifyPassword':
+../Main2.c:101: error: 'input_Password' undeclared (first use in this function)
+../Main2.c:101: error: 'stored_Password' undeclared (first use in this function)
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:04:34 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'comparePassword':
+../Main2.c:64: error: 'receivedPassword' undeclared (first use in this function)
+../Main2.c:64: error: (Each undeclared identifier is reported only once
+../Main2.c:64: error: for each function it appears in.)
+../Main2.c:64: error: 'storedPassword' undeclared (first use in this function)
+../Main2.c: In function 'EEPROM_verifyPassword':
+../Main2.c:102: error: 'input_Password' undeclared (first use in this function)
+../Main2.c:102: error: 'stored_Password' undeclared (first use in this function)
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:05:16 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'comparePassword':
+../Main2.c:64: error: 'receivedPassword' undeclared (first use in this function)
+../Main2.c:64: error: (Each undeclared identifier is reported only once
+../Main2.c:64: error: for each function it appears in.)
+../Main2.c:64: error: 'storedPassword' undeclared (first use in this function)
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:05:44 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Main2.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8500 bytes (25.9% Full)
+(.text + .data + .bootloader)
+
+Data:         38 bytes (1.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:06:03 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8500 bytes (25.9% Full)
+(.text + .data + .bootloader)
+
+Data:         38 bytes (1.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:36:39 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:139:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'main':
+../Main2.c:287: warning: implicit declaration of function 'DCMotor_init'
+../Main2.c:349: warning: implicit declaration of function 'DCMotor_Rotate'
+../Main2.c:351: error: 'STOP' undeclared (first use in this function)
+../Main2.c:351: error: (Each undeclared identifier is reported only once
+../Main2.c:351: error: for each function it appears in.)
+../Main2.c:353: error: 'ACW' undeclared (first use in this function)
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:37:37 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:139:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'main':
+../Main2.c:287: warning: implicit declaration of function 'DCMotor_init'
+Finished building: ../Main2.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+./Main2.o: In function `writePasswordInEEPROM':
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:129: undefined reference to `DCMotor_init'
+make: *** [MC2.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:38:08 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:139:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Main2.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9568 bytes (29.2% Full)
+(.text + .data + .bootloader)
+
+Data:         51 bytes (2.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:38:11 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9568 bytes (29.2% Full)
+(.text + .data + .bootloader)
+
+Data:         51 bytes (2.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:30:20 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'STEP1':
+../Main2.c:57: warning: implicit declaration of function 'EEPROM_writePassword'
+../Main2.c: At top level:
+../Main2.c:68: warning: conflicting types for 'EEPROM_writePassword'
+../Main2.c:57: warning: previous implicit declaration of 'EEPROM_writePassword' was here
+Finished building: ../Main2.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9398 bytes (28.7% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:30:22 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9398 bytes (28.7% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:47:00 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'STEP1':
+../Main2.c:60: warning: implicit declaration of function 'EEPROM_writePassword'
+../Main2.c: At top level:
+../Main2.c:71: warning: conflicting types for 'EEPROM_writePassword'
+../Main2.c:60: warning: previous implicit declaration of 'EEPROM_writePassword' was here
+../Main2.c: In function 'STEP2':
+../Main2.c:125: error: lvalue required as left operand of assignment
+../Main2.c:126: error: lvalue required as left operand of assignment
+../Main2.c:132: error: lvalue required as left operand of assignment
+../Main2.c:133: error: lvalue required as left operand of assignment
+../Main2.c:142: error: lvalue required as left operand of assignment
+../Main2.c:143: error: lvalue required as left operand of assignment
+../Main2.c:149: error: lvalue required as left operand of assignment
+../Main2.c:150: error: lvalue required as left operand of assignment
+../Main2.c:168: error: lvalue required as left operand of assignment
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:48:20 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'STEP1':
+../Main2.c:60: warning: implicit declaration of function 'EEPROM_writePassword'
+../Main2.c: At top level:
+../Main2.c:71: warning: conflicting types for 'EEPROM_writePassword'
+../Main2.c:60: warning: previous implicit declaration of 'EEPROM_writePassword' was here
+Finished building: ../Main2.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9248 bytes (28.2% Full)
+(.text + .data + .bootloader)
+
+Data:         57 bytes (2.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:48:22 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9248 bytes (28.2% Full)
+(.text + .data + .bootloader)
+
+Data:         57 bytes (2.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:56:56 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'STEP1':
+../Main2.c:60: warning: implicit declaration of function 'EEPROM_writePassword'
+../Main2.c: At top level:
+../Main2.c:71: warning: conflicting types for 'EEPROM_writePassword'
+../Main2.c:60: warning: previous implicit declaration of 'EEPROM_writePassword' was here
+Finished building: ../Main2.c
+ 
+Building file: ../buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"buzzer.d" -MT"buzzer.o" -c -o "buzzer.o" "../buzzer.c"
+Finished building: ../buzzer.c
+ 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9248 bytes (28.2% Full)
+(.text + .data + .bootloader)
+
+Data:         57 bytes (2.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:57:00 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9248 bytes (28.2% Full)
+(.text + .data + .bootloader)
+
+Data:         57 bytes (2.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:01:51 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9248 bytes (28.2% Full)
+(.text + .data + .bootloader)
+
+Data:         57 bytes (2.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:04:47 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'STEP1':
+../Main2.c:60: warning: implicit declaration of function 'EEPROM_writePassword'
+../Main2.c: At top level:
+../Main2.c:71: warning: conflicting types for 'EEPROM_writePassword'
+../Main2.c:60: warning: previous implicit declaration of 'EEPROM_writePassword' was here
+Finished building: ../Main2.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9260 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         57 bytes (2.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:04:49 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9260 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         57 bytes (2.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:14:40 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'STEP1':
+../Main2.c:60: warning: implicit declaration of function 'EEPROM_writePassword'
+../Main2.c: At top level:
+../Main2.c:71: warning: conflicting types for 'EEPROM_writePassword'
+../Main2.c:60: warning: previous implicit declaration of 'EEPROM_writePassword' was here
+../Main2.c: In function 'Turn_on':
+../Main2.c:106: error: too many arguments to function 'DcMotor_Rotate'
+../Main2.c:108: error: too many arguments to function 'DcMotor_Rotate'
+../Main2.c:110: error: too many arguments to function 'DcMotor_Rotate'
+../Main2.c:112: error: too many arguments to function 'DcMotor_Rotate'
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:14:56 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'STEP1':
+../Main2.c:60: warning: implicit declaration of function 'EEPROM_writePassword'
+../Main2.c: At top level:
+../Main2.c:71: warning: conflicting types for 'EEPROM_writePassword'
+../Main2.c:60: warning: previous implicit declaration of 'EEPROM_writePassword' was here
+../Main2.c: In function 'Turn_on':
+../Main2.c:106: error: too many arguments to function 'DcMotor_Rotate'
+../Main2.c:108: error: too many arguments to function 'DcMotor_Rotate'
+../Main2.c:110: error: too many arguments to function 'DcMotor_Rotate'
+../Main2.c:112: error: too many arguments to function 'DcMotor_Rotate'
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:15:39 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'STEP1':
+../Main2.c:60: warning: implicit declaration of function 'EEPROM_writePassword'
+../Main2.c: At top level:
+../Main2.c:71: warning: conflicting types for 'EEPROM_writePassword'
+../Main2.c:60: warning: previous implicit declaration of 'EEPROM_writePassword' was here
+Finished building: ../Main2.c
+ 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9338 bytes (28.5% Full)
+(.text + .data + .bootloader)
+
+Data:         57 bytes (2.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:15:42 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9338 bytes (28.5% Full)
+(.text + .data + .bootloader)
+
+Data:         57 bytes (2.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:21:48 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9338 bytes (28.5% Full)
+(.text + .data + .bootloader)
+
+Data:         57 bytes (2.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:28:07 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9338 bytes (28.5% Full)
+(.text + .data + .bootloader)
+
+Data:         57 bytes (2.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:52:47 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'STEP1':
+../Main2.c:65: warning: implicit declaration of function 'EEPROM_writePassword'
+../Main2.c: At top level:
+../Main2.c:75: warning: conflicting types for 'EEPROM_writePassword'
+../Main2.c:65: warning: previous implicit declaration of 'EEPROM_writePassword' was here
+Finished building: ../Main2.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9300 bytes (28.4% Full)
+(.text + .data + .bootloader)
+
+Data:         57 bytes (2.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:52:49 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9300 bytes (28.4% Full)
+(.text + .data + .bootloader)
+
+Data:         57 bytes (2.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:11:03 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Main2.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9300 bytes (28.4% Full)
+(.text + .data + .bootloader)
+
+Data:         57 bytes (2.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:11:05 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9300 bytes (28.4% Full)
+(.text + .data + .bootloader)
+
+Data:         57 bytes (2.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:17:01 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Main2.c
+ 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9166 bytes (28.0% Full)
+(.text + .data + .bootloader)
+
+Data:         57 bytes (2.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:17:04 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9166 bytes (28.0% Full)
+(.text + .data + .bootloader)
+
+Data:         57 bytes (2.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:28:17 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Main2.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9166 bytes (28.0% Full)
+(.text + .data + .bootloader)
+
+Data:         57 bytes (2.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:28:19 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9166 bytes (28.0% Full)
+(.text + .data + .bootloader)
+
+Data:         57 bytes (2.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:14:51 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Main2.c
+ 
+Building file: ../buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"buzzer.d" -MT"buzzer.o" -c -o "buzzer.o" "../buzzer.c"
+Finished building: ../buzzer.c
+ 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building file: ../external_eeprom.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"external_eeprom.d" -MT"external_eeprom.o" -c -o "external_eeprom.o" "../external_eeprom.c"
+Finished building: ../external_eeprom.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building file: ../timer1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"timer1.d" -MT"timer1.o" -c -o "timer1.o" "../timer1.c"
+../timer1.c: In function 'Timer1_setCallBack':
+../timer1.c:60: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer1.c
+ 
+Building file: ../twi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"twi.d" -MT"twi.o" -c -o "twi.o" "../twi.c"
+../twi.c:21:5: warning: "/*" within comment
+../twi.c:24:5: warning: "/*" within comment
+../twi.c:28:23: warning: "/*" within comment
+Finished building: ../twi.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9272 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         57 bytes (2.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:14:55 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9272 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         57 bytes (2.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:45:01 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'main':
+../Main2.c:125: error: 'STEP2' undeclared (first use in this function)
+../Main2.c:125: error: (Each undeclared identifier is reported only once
+../Main2.c:125: error: for each function it appears in.)
+../Main2.c:155: warning: implicit declaration of function 'DCMotor_Rotate'
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:45:25 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Main2.c: In function 'main':
+../Main2.c:125: error: 'STEP2' undeclared (first use in this function)
+../Main2.c:125: error: (Each undeclared identifier is reported only once
+../Main2.c:125: error: for each function it appears in.)
+make: *** [Main2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:45:50 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Main2.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9272 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         59 bytes (2.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:45:53 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9272 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         59 bytes (2.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:50:32 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Main2.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9308 bytes (28.4% Full)
+(.text + .data + .bootloader)
+
+Data:         59 bytes (2.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:50:34 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9308 bytes (28.4% Full)
+(.text + .data + .bootloader)
+
+Data:         59 bytes (2.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:05:48 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Building file: ../Main2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Main2.d" -MT"Main2.o" -c -o "Main2.o" "../Main2.c"
+In file included from ../Main2.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Main2.c
+ 
+Building file: ../buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"buzzer.d" -MT"buzzer.o" -c -o "buzzer.o" "../buzzer.c"
+Finished building: ../buzzer.c
+ 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building file: ../external_eeprom.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"external_eeprom.d" -MT"external_eeprom.o" -c -o "external_eeprom.o" "../external_eeprom.c"
+Finished building: ../external_eeprom.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building file: ../timer1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"timer1.d" -MT"timer1.o" -c -o "timer1.o" "../timer1.c"
+../timer1.c: In function 'Timer1_setCallBack':
+../timer1.c:60: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer1.c
+ 
+Building file: ../twi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"twi.d" -MT"twi.o" -c -o "twi.o" "../twi.c"
+../twi.c:21:5: warning: "/*" within comment
+../twi.c:24:5: warning: "/*" within comment
+../twi.c:28:23: warning: "/*" within comment
+Finished building: ../twi.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC2.map -mmcu=atmega32 -o "MC2.elf"  ./Main2.o ./buzzer.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./pwm.o ./timer1.o ./twi.o ./uart.o   
+Finished building target: MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC2.elf  >"MC2.lss"
+Finished building: MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9364 bytes (28.6% Full)
+(.text + .data + .bootloader)
+
+Data:         59 bytes (2.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:05:52 **** Incremental Build of configuration Debug for project MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9364 bytes (28.6% Full)
+(.text + .data + .bootloader)
+
+Data:         59 bytes (2.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
